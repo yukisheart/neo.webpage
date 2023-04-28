@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<title>neoclock</title>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="orange.png">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' crossorigin='anonymous'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=ABeeZee'>
+		<link rel='stylesheet' href='style.css'></link>
+	</head>
+	<body>
+		<script>
+			function iframe(button) {
+				document.getElementById(`inlineframe`).src = `${button}.html`;
+			}
+		</script>
+		<div id='homepage'>
+			<div id='navbar'>
+				<button type='button' onclick='iframe("features")'><i class='fa fa-slack'></i> features</button>
+				<button type='button' onclick='iframe("materials")'><i class='fa fa-wrench'></i> materials</button>
+				<button type='button' onclick='iframe("building")'><i class='fa fa-flask'></i> building</button>
+				<button type='button' onclick='iframe("credits")'><i class='fa fa-heart'></i> credits</button>
+			</div>
+			<div id='details'>
+				<div class='columngrid'>
+					<p class='gridtitle'>introducing the neoclock</p>
+					<p class='gridcontent'>
+						always know what period it is,<br>
+						never be late to class again.<br>
+						<br>
+						welcome to the future of educational time!
+					</p>
+				</div>
+				<div class='columngrid'>
+					<p class='gridtitle'></p>
+					<p class='gridcontent'>
+						the neoclock was originally thought of by my robotics teacher in order to supply an idea for my group's project.<br>
+						<br>
+
+						well, the idea of a clock at least.
+					</p>
+				</div>
+				<div class='columngrid'>
+					<p class='gridtitle'></p>
+					<p class='gridcontent'>
+						we created the neoclock using inspiration and a similar process to a teacher in a different state who employed Arduino and other tools to make her school's time system better.<br>
+						<br>
+						you can find the link to her GitHub right <a href='https://github.com/jdeboi'>here.</a> use her github to find the svg files for the frame carvings.
+					</p>
+				</div>
+			</div>
+		</div>
+		<iframe src='placeholder.html' id='inlineframe'></iframe>
+		<a id='githubad' href='#'>find this page on GitHub</a>
+	</body>
+</html>

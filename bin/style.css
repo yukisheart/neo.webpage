@@ -1,0 +1,146 @@
+html {
+	background-color: #d6c0e3;
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+	background-size: cover;
+    font-family: 'ABeeZee';
+	font-size: 137.5%;
+	animation: fadeIn 2s;
+	text-shadow: 2px 2px 4px #3b3b3b;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#githubad {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding-left: 3px;
+}
+
+#githubad:link {
+	color: black;
+}
+
+#githubad:visited {
+	color: #3b3b3b;
+}
+
+#navbar {
+	z-index: 10;
+	position: fixed;
+	padding-top: 3px;
+}
+
+#navbar button {
+	transition: all .2s ease-in-out; 
+	z-index: 10;
+	text-shadow: 2px 2px 4px #3b3b3b;
+	padding-right: 10px;
+	color: black;
+	float: left;
+	font-size: 17px;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+#navbar button:hover {
+	color: #3b3b3b;
+	transform: scale(1.1); 
+}
+
+#details, #listeddetails, #procedureddetails, #sidebar {
+	gap: 13px;
+	padding-top: 40px;
+	position: fixed;
+	display: grid;
+	background-color: transparent;
+}
+
+#listeddetails, #procedureddetails {
+	grid-template-columns: 1fr 1fr;
+}
+
+.columngrid, .headlinegrid, .listgrid, .proceduregrid {
+	transition: all .2s ease-in-out;
+	box-shadow: 5px 5px 10px 2px rgba(0,0,0, 0.8);
+	color: white;
+	margin-left: 10px;
+	width: 450px;
+	border-radius: 7px;
+	background: rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+#procedureddetails img {
+	box-shadow: 5px 5px 10px 2px rgba(0,0,0, 0.8);
+	border-radius: 7px;
+	object-fit: scale-down;
+}
+
+.listgrid {
+	text-align: left;
+	width: 300px;
+}
+
+.listgrid .gridtitle {
+	text-align: center;
+}
+
+.columngrid:hover, .headlinegrid:hover, .listgrid:hover, .proceduregrid:hover {
+	transform: scale(1.06);
+}
+
+.gridtitle {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+	font-size: 25px;
+}
+
+.gridcontent {
+	color: #d1d1d1;
+	text-shadow: 2px 2px 4px #000000;
+	margin-top: 0;
+	font-size: 16px;
+}
+
+.gridcontent a {
+	color: white;
+}
+
+li {
+	color: #d1d1d1;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 15px;
+}
+
+iframe {
+	position: absolute;
+	right: 0;
+	z-index: 50;
+	overflow: auto;
+	box-shadow: 5px 5px 10px 2px rgba(0,0,0, 0.4);
+	width: 1400px;
+	height: 10000px;
+	border-radius: 7px;
+	border-color: transparent;
+}
+
+#headline {
+	height: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.headlinegrid {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
