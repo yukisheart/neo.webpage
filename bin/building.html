@@ -7,20 +7,68 @@
 	</head>
 	<body>
 		<div id='buildingpage'>
-			<p id='headline'>here are the building steps...</p>
-			<div id='procedureddetails'>
-				<img src='step1.png' alt='step one'></img>
-				<img src='FHABL6YIORH5O2U.webp' alt='step one'></img>
-				<img src='step2.png' alt='step two'></img>
-				<img src='FLPMDDQIOVP5GXP.webp' alt='step two'></img>
-				<img src='step3.png' alt='step three'></img>
-				<img src='FMVQ9YLIOQ1HP37.webp' alt='step three'></img>
-				<img src='step4.png' alt='step four'></img>
-				<img src='FGD78FAIOQ1HPIC.webp' alt='step four'></img>
-				<img src='step5.png' alt='step five'></img>
-				<img src='FE2AEPDIORH5M5B.webp' alt='step six'></img>
-				<img src='step6.png' alt='step six'></img>
-				<img src='F0XIGROIOQ1HQB0.webp' alt='step six'></img>
+			<p id='headline'>here are the building steps:</p>
+			<div id='details'>
+				<div class='stepgrid'>
+					<p class='gridtitle'>step #1</p>
+					<p class='gridcontent'>
+						create a frame out of your chosen material, we used cardboard. you'll then need to carve the proper digit symbols into the cardboard to resemble the face of a clock. don't forget to add a period/block number carving at the top right.
+					</p>
+				</div>
+				<div class='breakgrid'>
+					<p class='gridtitle'></p>
+					<p class='gridcontent'>
+						<img src='FHABL6YIORH5O2U.webp' alt='an image of the result'></img>
+					</p>
+				</div>
+				<div class='stepgrid'>
+					<p class='gridtitle'>step #2</p>
+					<p class='gridcontent'>
+						we used an Arduino Nano for this project. so, next we connected 4 wires to the Nano: a wire to A4 and A5 for (SDA and SCL respectively for I2C communication with the ChronoDot), and a wire to GND and 5V. the other end of these wires will be connected to the ChronoDot at a later point. these wires should occupy the rows of your choice, on the top of the protoboard.
+					</p>
+				</div>
+				<div class='breakgrid'>
+					<p class='gridtitle'></p>
+					<p class='gridcontent'>
+						<img src='FLPMDDQIOVP5GXP.webp' alt='an image of the result'></img>
+					</p>
+				</div>
+				<div class='stepgrid'>
+					<p class='gridtitle'>step #3</p>
+					<p class='gridcontent'>
+						we now need to apply the ChronoDot module. it should be placed adjacent to the Nano. now you need to connect all of the wires related to the Nano and ChronoDot. SDA should be connected to A4, SCL to A5, 5V to Vcc, and GND to GND.
+					</p>
+				</div>
+				<div class='breakgrid'>
+					<p class='gridtitle'></p>
+					<p class='gridcontent'>
+						<img src='FMVQ9YLIOQ1HP37.webp' alt='an image of the result'></img>
+					</p>
+				</div>
+				<div class='stepgrid'>
+					<p class='gridtitle'>step #4</p>
+					<p class='gridcontent'>
+						now, we'll need the DC power adapter. begin by screwing two wires into the positive and negative terminals of the into the DC power adapter. next, connect a wire from the ChronoDot’s Vcc to the positive power adapter terminal, and the GND of the ChronoDot to the negative terminal. now, it’s time to add the 1000uF capacitor. the negative lead is connected to the negative power adapter, and positive lead to the positive terminal.
+					</p>
+				</div>
+				<div class='breakgrid'>
+					<p class='gridtitle'></p>
+					<p class='gridcontent'>
+						<img src='FGD78FAIOQ1HPIC.webp' alt='an image of the result'></img>
+					</p>
+				</div>
+				<div class='stepgrid'>
+					<p class='gridtitle'>step #5</p>
+					<p class='gridcontent'>
+						watch the video on the project to learn how to assemble the Neopixels and apply it to the material.
+					</p>
+				</div>
+				<div class='breakgrid'>
+					<p class='gridtitle'></p>
+					<p class='gridcontent'>
+						<img src='F0XIGROIOQ1HQB0.webp' alt='an image of the result'></img>
+					</p>
+				</div>
 			</div>
 		</div>
 	</body>
